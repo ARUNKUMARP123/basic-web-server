@@ -5,7 +5,7 @@ const { craeteFileAndWriteToFile,readFileAndPrint }=require('./filesystem') ;
 const server = createServer((req, res) => {
     readFileAndPrint()
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end('<h1>How are you?\n</h1>');
+  res.end('<h1>Node.js File System\n</h1>');
 });
 
 // starts a simple http server locally on port 3000
